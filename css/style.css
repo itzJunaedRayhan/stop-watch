@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/1374076.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Poppins;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper h2{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 60%;
+    max-width: 650px;
+    min-height: 400px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left h2{
+    color: tomato;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 3px;
+}
+
+.clock{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+.clock .hours,
+.clock .minutes,
+.clock .seconds,
+.clock .miliseconds{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock span{
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    display: block;
+    color: #000;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.control-buttons button{
+    width: 85px;
+    height: 40px;
+    background-color: #0048ce;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 72, 206, 0.6);
+    transition: all 0.5s ease;
+}
+
+.control-buttons button:hover{
+    background-color: transparent;
+    border: 2px solid #0048ce;
+    color: #0048ce;
+    font-weight: bold;
+}
+
+
+
+
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author{
+    width: 450px;
+    height: 300px;
+}
+
+.author img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .wrapper{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .author{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .clock .hours,
+    .clock .minutes,
+    .clock .seconds,
+    .clock .miliseconds{
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+    }
+
+    .clock span {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .clock .hours,
+    .clock .minutes,
+    .clock .seconds,
+    .clock .miliseconds{
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    .clock span {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .control-buttons button {
+        width: 75px;
+        height: 40px;
+        margin: 3px;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    .clock .hours,
+    .clock .minutes,
+    .clock .seconds,
+    .clock .miliseconds{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .clock span {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .control-buttons button {
+        width: 58px;
+        height: 40px;
+        margin: 65px 3px 10px 3px;
+        font-size: 14px;
+    }
+
+    .left{
+        min-height: 200px;
+        padding: 15px;
+    }
+}
