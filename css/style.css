@@ -192,13 +192,13 @@
 }
 
 
-@media only screen and (max-width: 395px) {
+@media only screen and (max-width: 430px) {
     .clock .hours,
     .clock .minutes,
     .clock .seconds,
     .clock .miliseconds{
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
         font-size: 25px;
     }
 
@@ -223,7 +223,7 @@
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
     .clock .hours,
     .clock .minutes,
     .clock .seconds,
